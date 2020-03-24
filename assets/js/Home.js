@@ -5,7 +5,8 @@ import {
 	Col,
 } from 'reactstrap';
 import AppContact from './Components/AppContact';
-import servicesOffered from './config';
+import AppFeedback from './Components/AppFeedback';
+import { servicesOffered } from './config';
 import { Helmet } from 'react-helmet';
 
 class Home extends Component {
@@ -61,11 +62,10 @@ class Home extends Component {
 					<Container>
 						<Row>
 							<Col>
-								<h2 className="text-center">Customer Feedback</h2>
+								<h2 className="text-center mb-3" id="Feedback">Customer Feedback</h2>
 							</Col>
 						</Row>
-						<Row>
-						</Row>
+						<AppFeedback />
 					</Container>
 					<svg
 						className="waves"

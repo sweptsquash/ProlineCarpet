@@ -18,7 +18,7 @@ import {
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import servicesOffered from '../config';
+import { servicesOffered } from '../config';
 
 import ProlineLogo from '../../images/ProlineLogo.png';
 
@@ -89,7 +89,7 @@ class AppHeader extends Component {
 									</DropdownMenu>
 								</UncontrolledDropdown>
 								<NavItem>
-									<NavLink href="/feedback">Feedback</NavLink>
+									<NavLink href="/#Feedback">Feedback</NavLink>
 								</NavItem>
 								<NavItem>
 									<NavLink href="/contact-us">Contact Us</NavLink>

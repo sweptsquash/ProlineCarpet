@@ -3,6 +3,17 @@
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 177px;
+}
+
 h1,
 h2,
 h3,
@@ -169,14 +180,42 @@ h5 {
     margin:110px 0;
 }
 
-.app-footer {
-    position: relative;
-    background-color: $app-header-bg-darker;
+.app-feedback-card {
+    border-radius: .45rem;
+    background-color: $primary;
     color: rgb(255,255,255);
-    padding:15px 0;
-    margin-top:120px;
-    font-size: 1.125rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    font-size: .8rem;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.15);
+
+    img {
+        border-radius: 50%;
+    }
+
+    .lead {
+        margin-bottom: .5rem;
+        font-weight: 700;
+    }
+}
+
+.app-footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    footer {
+        position: relative;
+        background-color: $app-header-bg-darker;
+        color: rgb(255,255,255);
+        padding:15px 0;
+        margin-top:120px;
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
 }
 
 .app-to-top {
@@ -205,12 +244,30 @@ h5 {
 
 .comparison {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin: 0 4rem 1.5rem 4rem;
 
-    div:first-child {
+    div[data-testid="container"] {
         max-height: 800px;
         border: 2px solid rgb(255,255,255);
         border-radius: .45rem;
+    }
+
+    .comparison-arrow {
+        position: absolute;
+        text-shadow: 0px 0px 2px rgba(0,0,0, .75);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+
+        &[data-direction="prev"] {
+            left:-30px;
+        }
+
+        &[data-direction="next"] {
+            right:-50px;
+        }
     }
 
     .comparison-label {

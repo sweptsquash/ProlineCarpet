@@ -10,7 +10,7 @@ import {
 	Label,
 	Input,
 } from 'reactstrap';
-import servicesOffered from '../config';
+import { servicesOffered } from '../config';
 
 class AppContact extends Component {
 	constructor(props) {

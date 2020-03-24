@@ -8,7 +8,7 @@ import AppContact from '../Components/AppContact';
 import AppPhotos from '../Components/AppPhotos';
 import { Helmet } from 'react-helmet';
 
-class Domestic extends Component {
+class Commercial extends Component {
 	render() {
 		return(
 			<div>
@@ -21,8 +21,8 @@ class Domestic extends Component {
 				<Container>
 					<Row>
 						<Col className="text-center">
-							<h2>Domestic Cleaning</h2>
-							<p>Our domestic cleaning service is for people on the go, whether you’re after a one-off or are looking for a regular,<br />local cleaner - Proline is the cleaning company to contact. Get in touch today to find out our availability.</p>
+							<h2>Commercial Cleaning</h2>
+							<p>Our commercial cleaning services are offered to large and small businesses.<br />We know just how important a clean and tidy working environment is to the happiness and productivity of your staff.<br />Whether you need a one time cleaning, or are looking for a regular cleaning service, get in touch today to find out our availability.</p>
 							<AppPhotos />
 						</Col>
 					</Row>
@@ -33,4 +33,4 @@ class Domestic extends Component {
 	}
 }
 
-export default Domestic;
+export default Commercial;

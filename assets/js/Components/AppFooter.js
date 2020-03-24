@@ -10,11 +10,11 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 class AppFooter extends Component {
 	render() {
 		return(
-			<div>
+			<div className="app-footer">
 				<a className="app-to-top" id="ToTop" onClick={() => { window.scrollTo({ top:0, left:0, behavior: 'smooth' }); }}>
 					<FontAwesomeIcon icon={ faChevronUp } />
 				</a>
-				<footer className="app-footer">
+				<footer>
 					<svg
 						className="waves inverted"
 						xmlns="http://www.w3.org/2000/svg"
