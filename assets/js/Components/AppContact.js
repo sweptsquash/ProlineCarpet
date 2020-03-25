@@ -46,7 +46,7 @@ class AppContact extends Component {
 
 		this.setState({ isSubmitting: true });
 
-		const res = await fetch('https://localhost:8000/contact-form', {
+		const res = await fetch('https://www.prolinecarpet.co.uk/contact-form', {
 			method: 'POST',
 			body: JSON.stringify(this.state.values),
 			headers: {

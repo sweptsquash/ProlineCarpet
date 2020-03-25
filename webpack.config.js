@@ -23,7 +23,7 @@ Encore
 		config.plugins.push('@babel/plugin-proposal-class-properties');
 	})
 	.enableSassLoader()
-	.enableIntegrityHashes(Encore.isProduction())
+	//.enableIntegrityHashes(Encore.isProduction())
 	.autoProvidejQuery()
 	.autoProvideVariables({
 		$: 'jquery',

@@ -1,8 +1,19 @@
-Website Enquiry\r\n\r\n
-Name: {name}\r\n
-Service: {service}\r\n
-Postcode: {postcode}\r\n
-Contact Method: {method}\r\n
-Phone: {phone}\r\n
-Email: {email}\r\n
-Message: {message}
+Website Enquiry Form
+
+Name: {{name}}
+
+Service: {{service}}
+
+Postcode: {{postcode}}
+
+Contact Method: {{method}}
+
+{% if phone is not empty %}
+Phone: {{phone}}
+
+{% endif %}
+{% if email is not empty %}
+Email: {{email}}
+
+{% endif %}
+Message: {{message}}

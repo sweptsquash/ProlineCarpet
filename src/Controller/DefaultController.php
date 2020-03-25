@@ -67,7 +67,7 @@ class DefaultController extends AbstractController
                 {
                     $message = (new \Swift_Message('Website Enquiry'))
                         ->setFrom('noreply@prolinecarpet.co.uk')
-                        ->setTo('admin@prolinecarpet.co.uk')
+                        ->setTo(['cathryn@prolinecarpet.co.uk', 'chris@prolinecarpet.co.uk'])
                         ->setBody(
                             $this->renderView(
                                 'email.txt.twig',
