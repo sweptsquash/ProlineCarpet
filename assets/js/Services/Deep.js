@@ -6,18 +6,13 @@ import {
 } from 'reactstrap';
 import AppContact from '../Components/AppContact';
 import AppPhotos from '../Components/AppPhotos';
-import { Helmet } from 'react-helmet';
+import SEO from '../Components/SEO';
 
 class Deep extends Component {
 	render() {
 		return(
 			<div>
-				<Helmet titleTemplate="%s | Proline Carpet Cleaning">
-					<title>One Off Deep Clean</title>
-					<link rel="canonical" href="https://www.prolinecarpet.co.uk/services/deep-clean/" />
-					<meta property="og:url" content="https://www.prolinecarpet.co.uk/services/deep-clean/" />
-					<meta property="og:title" content="One Off Deep Clean | Proline Carpet Cleaning" />
-				</Helmet>
+				<SEO title="One Off Deep Clean" url="https://www.prolinecarpet.co.uk/services/deep-clean/" />
 				<Container>
 					<Row>
 						<Col className="text-center">

@@ -7,22 +7,17 @@ import {
 import AppContact from './Components/AppContact';
 import AppFeedback from './Components/AppFeedback';
 import { servicesOffered } from './config';
-import { Helmet } from 'react-helmet';
+import SEO from './Components/SEO';
 
 class Home extends Component {
 	render() {
 		return(
 			<div>
-				<Helmet>
-					<title>Proline Carpet Cleaning</title>
-					<link rel="canonical" href="https://www.prolinecarpet.co.uk/" />
-					<meta property="og:url" content="https://www.prolinecarpet.co.uk/" />
-					<meta property="og:title" content="Proline Carpet Cleaning" />
-				</Helmet>
+				<SEO url="https://www.prolinecarpet.co.uk/" />
 				<Container>
 					<Row>
 						<Col className="text-center">
-							<h2 className="my-3" id="OurServices">Our Services</h2>
+							<h1 className="h2 my-3" id="OurServices">Our Services</h1>
 						</Col>
 					</Row>
 					{servicesOffered.map((services, rowOffset) => {
@@ -32,7 +27,7 @@ class Home extends Component {
 									return(
 										<Col sm={12} md={6} xl={2} key={ index }>
 											<a href={ service.url } className="app-service-card">
-												<img src={ service.image } />
+												<img src={ service.image } alt={ service.name } />
 												{ service.title }
 											</a>
 										</Col>

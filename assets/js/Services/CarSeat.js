@@ -6,18 +6,13 @@ import {
 } from 'reactstrap';
 import AppContact from '../Components/AppContact';
 import AppPhotos from '../Components/AppPhotos';
-import { Helmet } from 'react-helmet';
+import SEO from '../Components/SEO';
 
 class Commercial extends Component {
 	render() {
 		return(
 			<div>
-				<Helmet titleTemplate="%s | Proline Carpet Cleaning">
-					<title>Car Seat Valeting</title>
-					<link rel="canonical" href="https://www.prolinecarpet.co.uk/services/car-seat-valeting/" />
-					<meta property="og:url" content="https://www.prolinecarpet.co.uk/services/car-seat-valeting/" />
-					<meta property="og:title" content="Car Seat Valeting | Proline Carpet Cleaning" />
-				</Helmet>
+				<SEO title="Car Seat Valeting" url="https://www.prolinecarpet.co.uk/services/car-seat-valeting/" />
 				<Container>
 					<Row>
 						<Col className="text-center">

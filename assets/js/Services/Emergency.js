@@ -6,18 +6,13 @@ import {
 } from 'reactstrap';
 import AppContact from '../Components/AppContact';
 import AppPhotos from '../Components/AppPhotos';
-import { Helmet } from 'react-helmet';
+import SEO from '../Components/SEO';
 
 class Emergency extends Component {
 	render() {
 		return(
 			<div>
-				<Helmet titleTemplate="%s | Proline Carpet Cleaning">
-					<title>Emergency Waterlogged Extraction</title>
-					<link rel="canonical" href="https://www.prolinecarpet.co.uk/services/emergency-extraction/" />
-					<meta property="og:url" content="https://www.prolinecarpet.co.uk/services/emergency-extraction/" />
-					<meta property="og:title" content="Emergency Waterlogged Extraction | Proline Carpet Cleaning" />
-				</Helmet>
+				<SEO title="Emergency Waterlogged Extraction" url="https://www.prolinecarpet.co.uk/services/emergency-extraction/" />
 				<Container>
 					<Row>
 						<Col className="text-center">
